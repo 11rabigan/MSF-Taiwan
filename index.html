@@ -284,7 +284,7 @@
             <p>本地圖顯示了全球難民流離失所的來源地以及無國界醫生的行動地點</p>
             <p>點擊橘色氣泡，了解更多關於主要難民危機的消息</p>
             <p>使用圖層按鈕可以切換顯示所有國家的難民數據</p>
-            <p style="font-size:11px;color:#888;margin-top:14px;">數據來源：UNHCR 2024 難民報告 & MSF 2024 國際活動報告</p>
+            <p style="font-size:11px;color:#888;margin-top:14px;">數據來源：UNHCR Global Trends Report 2025 & MSF 2024 國際活動報告</p>
             <button id="intro-btn" onclick="closeIntro()">探索地圖</button>
         </div>
     </div>
@@ -359,7 +359,7 @@
 
         const DATA_URLS = {
             geo:      'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson',
-            refugees: 'https://raw.githubusercontent.com/11rabigan/MSF/refs/heads/main/Refugees_by_Country_2024.geojson',
+            refugees: 'https://raw.githubusercontent.com/11rabigan/MSF/refs/heads/main/Refugees_by_Country_2025.geojson',
         };
 
         const MAP_STYLES = {
@@ -418,7 +418,7 @@
         const baseMap = L.tileLayer(
             'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
             {
-                attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> &copy; <a href="https://carto.com">CARTO</a> | 難民數據：UNHCR 2024 | 行動地點：MSF 2024 國際活動報告',
+                attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> &copy; <a href="https://carto.com">CARTO</a> | 難民數據：UNHCR Global Report 2025 | 行動地點：MSF 2024 國際活動報告',
                 maxZoom: MAX_ZOOM,
             }
         ).addTo(map);
